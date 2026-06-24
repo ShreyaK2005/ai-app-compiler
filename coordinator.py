@@ -1,12 +1,12 @@
 import time
 import json
-from utils.logger import log_info, log_error, log_stage, log_debug
-from utils.llm_client import LLMClient
-from pipeline.stage1_intent_extraction import IntentExtractor
-from pipeline.stage2_system_design import SystemDesigner
-from pipeline.stage3_schema_generation import SchemaGenerator
-from pipeline.stage4_refinement import Refiner
-from config.schemas import AppConfig
+from logger import log_info, log_error, log_stage, log_debug
+from llm_client import LLMClient
+from stage1_intent_extraction import IntentExtractor
+from stage2_system_design import SystemDesigner
+from stage3_schema_generation import SchemaGenerator
+from stage4_refinement import Refiner
+from schemas import AppConfig
 
 
 class PipelineCoordinator:
