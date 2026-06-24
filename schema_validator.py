@@ -1,7 +1,7 @@
 import json
 from pydantic import ValidationError, BaseModel
 from typing import Type, Tuple, List
-from config.schemas import (
+from schemas import (
     UserIntent,
     SystemDesign,
     UISchema,
