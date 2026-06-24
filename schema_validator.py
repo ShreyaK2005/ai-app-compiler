@@ -12,7 +12,7 @@ from schemas import (
     ValidationError as ValidationErrorSchema,
     ValidationResult
 )
-from utils.logger import log_error, log_warning, log_info
+from logger import log_error, log_warning, log_info
 
 
 class SchemaValidator:
