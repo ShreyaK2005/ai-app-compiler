@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from config.schemas import UISchema, APISchema, DBSchema, AuthRules, ValidationError as ValidationErrorSchema
+from schemas import UISchema, APISchema, DBSchema, AuthRules, ValidationError as ValidationErrorSchema
 from utils.logger import log_warning, log_info, log_error
 
 
