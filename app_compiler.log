@@ -1,0 +1,557 @@
+2026-06-24 05:29:23,692 - app_compiler - INFO - ============================================================
+2026-06-24 05:29:23,692 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 05:29:23,693 - app_compiler - INFO - ============================================================
+2026-06-24 05:29:23,693 - app_compiler - INFO - Available endpoints:
+2026-06-24 05:29:23,693 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 05:29:23,693 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 05:29:23,693 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 05:29:23,696 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 05:29:23,696 - app_compiler - INFO - ============================================================
+2026-06-24 05:29:23,789 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 05:29:23,790 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 05:29:45,533 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:29:45] "GET / HTTP/1.1" 200 -
+2026-06-24 05:29:45,724 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:29:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-24 05:30:48,637 - app_compiler - INFO - Received compilation request: Build a CRM with login, dashboard, role-based access, payment status, etc...
+2026-06-24 05:30:48,638 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:48,638 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:30:48,638 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:48,638 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:48,638 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:30:48,638 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:48,638 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:48,638 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:30:48,639 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:48,639 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 05:30:48,639 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:30:48,639 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, dashboard, role-based access, payment status, etc', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 05:30:48,639 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:30:48] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:30:57,780 - app_compiler - INFO - Received compilation request: Build a CRM with login, dashboard, role-based access, payment status, etc...
+2026-06-24 05:30:57,781 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:57,781 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:30:57,781 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:57,781 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:57,781 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:30:57,781 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:57,781 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:57,781 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:30:57,782 - app_compiler - INFO - ============================================================
+2026-06-24 05:30:57,782 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 05:30:57,782 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:30:57,782 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, dashboard, role-based access, payment status, etc', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 05:30:57,782 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:30:57] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:32:15,872 - app_compiler - INFO - Received compilation request: Build a CRM with login, Contacts, dashboard, role-based access, and premium plan with payments, Adva...
+2026-06-24 05:32:15,872 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:15,872 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:32:15,872 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:15,873 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:15,873 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:32:15,873 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:15,873 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:15,873 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:32:15,873 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:15,873 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 05:32:15,873 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:32:15,873 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, Contacts, dashboard, role-based access, and premium plan with payments, Advan can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 05:32:15,874 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:32:15] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:32:16,892 - app_compiler - INFO - Received compilation request: Build a CRM with login, Contacts, dashboard, role-based access, and premium plan with payments, Adva...
+2026-06-24 05:32:16,892 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:16,893 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:32:16,893 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:16,893 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:16,893 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:32:16,893 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:16,893 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:16,893 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:32:16,893 - app_compiler - INFO - ============================================================
+2026-06-24 05:32:16,893 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 05:32:16,893 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:32:16,894 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, Contacts, dashboard, role-based access, and premium plan with payments, Advan can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 05:32:16,894 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:32:16] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:42:41,078 - app_compiler - INFO - ============================================================
+2026-06-24 05:42:41,078 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 05:42:41,078 - app_compiler - INFO - ============================================================
+2026-06-24 05:42:41,079 - app_compiler - INFO - Available endpoints:
+2026-06-24 05:42:41,079 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 05:42:41,079 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 05:42:41,079 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 05:42:41,079 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 05:42:41,079 - app_compiler - INFO - ============================================================
+2026-06-24 05:42:41,125 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 05:42:41,125 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 05:42:52,645 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:42:52] "GET / HTTP/1.1" 200 -
+2026-06-24 05:43:33,521 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and a premium plan with payment options. Admin can see ...
+2026-06-24 05:43:33,521 - app_compiler - INFO - ============================================================
+2026-06-24 05:43:33,521 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:43:33,522 - app_compiler - INFO - ============================================================
+2026-06-24 05:43:33,522 - app_compiler - INFO - ============================================================
+2026-06-24 05:43:33,522 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:43:33,522 - app_compiler - INFO - ============================================================
+2026-06-24 05:43:33,522 - app_compiler - INFO - ============================================================
+2026-06-24 05:43:33,522 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:43:33,523 - app_compiler - INFO - ============================================================
+2026-06-24 05:43:33,523 - app_compiler - ERROR - Intent extraction failed: '"entity_name"'
+2026-06-24 05:43:33,523 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:43:33,523 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and a premium plan with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'"entity_name"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'"entity_name"\''}}
+2026-06-24 05:43:33,524 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:43:33] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:52:31,498 - app_compiler - INFO - ============================================================
+2026-06-24 05:52:31,498 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 05:52:31,498 - app_compiler - INFO - ============================================================
+2026-06-24 05:52:31,498 - app_compiler - INFO - Available endpoints:
+2026-06-24 05:52:31,498 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 05:52:31,499 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 05:52:31,499 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 05:52:31,499 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 05:52:31,499 - app_compiler - INFO - ============================================================
+2026-06-24 05:52:31,537 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 05:52:31,537 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 05:52:42,020 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:52:42] "GET / HTTP/1.1" 200 -
+2026-06-24 05:53:14,825 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin ca...
+2026-06-24 05:53:14,825 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:14,826 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:53:14,827 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:14,827 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:14,827 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:53:14,828 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:14,828 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:14,829 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:53:14,829 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:14,829 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 05:53:15,075 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 05:53:15,076 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:53:15,076 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 05:53:15,077 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:53:15] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:53:17,642 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin ca...
+2026-06-24 05:53:17,642 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:17,642 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:53:17,642 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:17,642 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:17,642 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:53:17,643 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:17,643 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:17,644 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:53:17,644 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:17,644 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 05:53:17,646 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 05:53:17,646 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:53:17,646 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 05:53:17,647 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:53:17] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:53:18,573 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin ca...
+2026-06-24 05:53:18,574 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:18,574 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:53:18,574 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:18,574 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:18,574 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:53:18,574 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:18,574 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:18,574 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:53:18,575 - app_compiler - INFO - ============================================================
+2026-06-24 05:53:18,575 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 05:53:18,576 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 05:53:18,576 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:53:18,576 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 05:53:18,576 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 05:53:18] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 05:56:46,144 - app_compiler - INFO - ============================================================
+2026-06-24 05:56:46,145 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 05:56:46,145 - app_compiler - INFO - ============================================================
+2026-06-24 05:56:46,145 - app_compiler - INFO - Available endpoints:
+2026-06-24 05:56:46,145 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 05:56:46,145 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 05:56:46,145 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 05:56:46,146 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 05:56:46,146 - app_compiler - INFO - ============================================================
+2026-06-24 05:56:46,197 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 05:56:46,197 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 05:56:58,717 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 05:56:58] "GET / HTTP/1.1" 200 -
+2026-06-24 05:56:58,933 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 05:56:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-24 05:57:14,501 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin ca...
+2026-06-24 05:57:14,502 - app_compiler - INFO - ============================================================
+2026-06-24 05:57:14,502 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 05:57:14,502 - app_compiler - INFO - ============================================================
+2026-06-24 05:57:14,502 - app_compiler - INFO - ============================================================
+2026-06-24 05:57:14,502 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 05:57:14,502 - app_compiler - INFO - ============================================================
+2026-06-24 05:57:14,503 - app_compiler - INFO - ============================================================
+2026-06-24 05:57:14,503 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 05:57:14,503 - app_compiler - INFO - ============================================================
+2026-06-24 05:57:14,503 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 05:57:14,719 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 05:57:14,719 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 05:57:14,719 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, role-based access, and premium plan with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 05:57:14,720 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 05:57:14] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:01:15,145 - app_compiler - INFO - ============================================================
+2026-06-24 06:01:15,145 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:01:15,145 - app_compiler - INFO - ============================================================
+2026-06-24 06:01:15,146 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:01:15,146 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:01:15,146 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:01:15,146 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:01:15,146 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:01:15,146 - app_compiler - INFO - ============================================================
+2026-06-24 06:01:15,195 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:01:15,196 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:01:24,102 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 06:01:24] "GET / HTTP/1.1" 200 -
+2026-06-24 06:01:37,455 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:01:37] "GET / HTTP/1.1" 200 -
+2026-06-24 06:02:17,060 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:02:17,060 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:17,060 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:02:17,060 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:17,061 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:17,061 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:02:17,061 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:17,061 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:17,061 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:02:17,061 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:17,062 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:02:17,282 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 06:02:17,282 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:02:17,282 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 06:02:17,284 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:02:17] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:02:21,153 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:02:21,153 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:21,153 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:02:21,153 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:21,153 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:21,153 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:02:21,153 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:21,154 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:21,154 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:02:21,154 - app_compiler - INFO - ============================================================
+2026-06-24 06:02:21,154 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:02:21,155 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 06:02:21,155 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:02:21,155 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 06:02:21,156 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 06:02:21] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:07:15,254 - app_compiler - INFO - ============================================================
+2026-06-24 06:07:15,254 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:07:15,255 - app_compiler - INFO - ============================================================
+2026-06-24 06:07:15,255 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:07:15,255 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:07:15,255 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:07:15,255 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:07:15,255 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:07:15,255 - app_compiler - INFO - ============================================================
+2026-06-24 06:07:15,312 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:07:15,313 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:10:43,331 - app_compiler - INFO - ============================================================
+2026-06-24 06:10:43,331 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:10:43,331 - app_compiler - INFO - ============================================================
+2026-06-24 06:10:43,331 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:10:43,332 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:10:43,332 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:10:43,332 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:10:43,332 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:10:43,332 - app_compiler - INFO - ============================================================
+2026-06-24 06:10:43,379 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:10:43,379 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:10:55,220 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:10:55] "GET / HTTP/1.1" 200 -
+2026-06-24 06:11:06,467 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:11:06,468 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:06,468 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:11:06,468 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:06,468 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:06,468 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:11:06,468 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:06,468 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:06,468 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:11:06,468 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:06,469 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 06:11:06,469 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:11:06,469 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 06:11:06,470 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:11:06] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:11:11,883 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:11:11] "GET / HTTP/1.1" 200 -
+2026-06-24 06:11:16,984 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:11:16,984 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:16,984 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:11:16,984 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:16,985 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:16,985 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:11:16,985 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:16,985 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:16,985 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:11:16,985 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:16,985 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 06:11:16,985 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:11:16,985 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 06:11:16,986 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:11:16] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:11:18,439 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:11:18,440 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:18,440 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:11:18,440 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:18,441 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:18,441 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:11:18,441 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:18,441 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:18,441 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:11:18,441 - app_compiler - INFO - ============================================================
+2026-06-24 06:11:18,442 - app_compiler - ERROR - Intent extraction failed: '\n    "app_type"'
+2026-06-24 06:11:18,442 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:11:18,442 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'KeyError', 'message': '\'\\n    "app_type"\''}}
+2026-06-24 06:11:18,443 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:11:18] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:14:00,141 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:00,142 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:14:00,142 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:00,142 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:14:00,142 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:14:00,142 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:14:00,142 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:14:00,142 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:14:00,142 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:00,193 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:14:00,194 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:14:06,737 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 06:14:06] "GET / HTTP/1.1" 200 -
+2026-06-24 06:14:28,680 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:14:28,681 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:28,681 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:14:28,681 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:28,682 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:28,682 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:14:28,683 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:28,683 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:28,683 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:14:28,683 - app_compiler - INFO - ============================================================
+2026-06-24 06:14:28,683 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:14:28,905 - app_compiler - ERROR - Intent extraction failed: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-24 06:14:28,906 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:14:28,906 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'TypeError', 'message': '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'}}
+2026-06-24 06:14:28,908 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2026 06:14:28] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:30:49,039 - app_compiler - INFO - ============================================================
+2026-06-24 06:30:49,039 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:30:49,040 - app_compiler - INFO - ============================================================
+2026-06-24 06:30:49,040 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:30:49,040 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:30:49,040 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:30:49,040 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:30:49,040 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:30:49,040 - app_compiler - INFO - ============================================================
+2026-06-24 06:30:49,096 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:30:49,096 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:30:55,504 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:30:55] "GET / HTTP/1.1" 200 -
+2026-06-24 06:30:58,702 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:30:58] "GET / HTTP/1.1" 200 -
+2026-06-24 06:31:12,441 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:31:12,441 - app_compiler - INFO - ============================================================
+2026-06-24 06:31:12,442 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:31:12,442 - app_compiler - INFO - ============================================================
+2026-06-24 06:31:12,442 - app_compiler - INFO - ============================================================
+2026-06-24 06:31:12,442 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:31:12,443 - app_compiler - INFO - ============================================================
+2026-06-24 06:31:12,443 - app_compiler - INFO - ============================================================
+2026-06-24 06:31:12,443 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:31:12,443 - app_compiler - INFO - ============================================================
+2026-06-24 06:31:12,443 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:31:13,307 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-24 06:31:13,309 - app_compiler - ERROR - API Error on attempt 1: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN669ra5k5zFkx6jscqU'}
+2026-06-24 06:31:14,967 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-24 06:31:14,972 - app_compiler - ERROR - API Error on attempt 2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN66G2te5BnSp11Cf5LP'}
+2026-06-24 06:31:17,330 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-24 06:31:17,331 - app_compiler - ERROR - API Error on attempt 3: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN66TELMWUdk1PJnkQZs'}
+2026-06-24 06:31:17,331 - app_compiler - ERROR - Intent extraction failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN66TELMWUdk1PJnkQZs'}
+2026-06-24 06:31:17,331 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:31:17,331 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'BadRequestError', 'message': "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN66TELMWUdk1PJnkQZs'}"}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'BadRequestError', 'message': "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN66TELMWUdk1PJnkQZs'}"}}
+2026-06-24 06:31:17,332 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:31:17] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:35:47,354 - app_compiler - INFO - ============================================================
+2026-06-24 06:35:47,355 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:35:47,355 - app_compiler - INFO - ============================================================
+2026-06-24 06:35:47,355 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:35:47,355 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:35:47,355 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:35:47,355 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:35:47,355 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:35:47,355 - app_compiler - INFO - ============================================================
+2026-06-24 06:35:47,394 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:35:47,395 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:35:56,624 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:35:56] "GET / HTTP/1.1" 200 -
+2026-06-24 06:36:07,521 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:36:07,522 - app_compiler - INFO - ============================================================
+2026-06-24 06:36:07,522 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:36:07,522 - app_compiler - INFO - ============================================================
+2026-06-24 06:36:07,522 - app_compiler - INFO - ============================================================
+2026-06-24 06:36:07,522 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:36:07,522 - app_compiler - INFO - ============================================================
+2026-06-24 06:36:07,522 - app_compiler - INFO - ============================================================
+2026-06-24 06:36:07,523 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:36:07,523 - app_compiler - INFO - ============================================================
+2026-06-24 06:36:07,523 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:36:08,219 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-24 06:36:08,220 - app_compiler - ERROR - API Error on attempt 1: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN6TtbuPfgf6AC4bPMUD'}
+2026-06-24 06:36:09,547 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-24 06:36:09,549 - app_compiler - ERROR - API Error on attempt 2: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN6TzbpK72AF5Zax6n23'}
+2026-06-24 06:36:11,907 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-24 06:36:11,908 - app_compiler - ERROR - API Error on attempt 3: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN6UAfYdfgHFGiVWhC5L'}
+2026-06-24 06:36:11,908 - app_compiler - ERROR - Intent extraction failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN6UAfYdfgHFGiVWhC5L'}
+2026-06-24 06:36:11,908 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:36:11,908 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'BadRequestError', 'message': "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN6UAfYdfgHFGiVWhC5L'}"}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'BadRequestError', 'message': "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcN6UAfYdfgHFGiVWhC5L'}"}}
+2026-06-24 06:36:11,909 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:36:11] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:53:50,469 - app_compiler - INFO - ============================================================
+2026-06-24 06:53:50,473 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:53:50,473 - app_compiler - INFO - ============================================================
+2026-06-24 06:53:50,473 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:53:50,473 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:53:50,474 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:53:50,474 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:53:50,474 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:53:50,474 - app_compiler - INFO - ============================================================
+2026-06-24 06:53:50,532 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:53:50,532 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:54:00,700 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:54:00] "GET / HTTP/1.1" 200 -
+2026-06-24 06:54:13,064 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:54:13,065 - app_compiler - INFO - ============================================================
+2026-06-24 06:54:13,065 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:54:13,065 - app_compiler - INFO - ============================================================
+2026-06-24 06:54:13,065 - app_compiler - INFO - ============================================================
+2026-06-24 06:54:13,065 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:54:13,065 - app_compiler - INFO - ============================================================
+2026-06-24 06:54:13,066 - app_compiler - INFO - ============================================================
+2026-06-24 06:54:13,066 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:54:13,066 - app_compiler - INFO - ============================================================
+2026-06-24 06:54:13,066 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:54:15,349 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+2026-06-24 06:54:15,353 - app_compiler - ERROR - Intent extraction failed: type object 'OpenAI' has no attribute 'RateLimitError'
+2026-06-24 06:54:15,354 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:54:15,354 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'AttributeError', 'message': "type object 'OpenAI' has no attribute 'RateLimitError'"}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'AttributeError', 'message': "type object 'OpenAI' has no attribute 'RateLimitError'"}}
+2026-06-24 06:54:15,355 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:54:15] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 06:59:10,623 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:10,623 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 06:59:10,624 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:10,624 - app_compiler - INFO - Available endpoints:
+2026-06-24 06:59:10,624 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 06:59:10,624 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 06:59:10,624 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 06:59:10,624 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 06:59:10,624 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:10,675 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 06:59:10,675 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 06:59:21,098 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:59:21] "GET / HTTP/1.1" 200 -
+2026-06-24 06:59:23,676 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:59:23] "GET / HTTP/1.1" 200 -
+2026-06-24 06:59:35,303 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 06:59:35,304 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:35,304 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 06:59:35,304 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:35,304 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:35,304 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 06:59:35,304 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:35,304 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:35,305 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 06:59:35,305 - app_compiler - INFO - ============================================================
+2026-06-24 06:59:35,305 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 06:59:37,399 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 401 Unauthorized"
+2026-06-24 06:59:37,401 - app_compiler - ERROR - Intent extraction failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-************xxxx. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-06-24 06:59:37,401 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 06:59:37,401 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'AuthenticationError', 'message': "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-************xxxx. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'AuthenticationError', 'message': "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-************xxxx. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"}}
+2026-06-24 06:59:37,402 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 06:59:37] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 07:11:21,031 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:21,032 - app_compiler - INFO - APP COMPILER - Starting Flask Server
+2026-06-24 07:11:21,032 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:21,032 - app_compiler - INFO - Available endpoints:
+2026-06-24 07:11:21,032 - app_compiler - INFO -   GET  /                    - Web UI
+2026-06-24 07:11:21,032 - app_compiler - INFO -   POST /api/compile         - Compile app from prompt
+2026-06-24 07:11:21,032 - app_compiler - INFO -   POST /api/evaluate        - Run evaluation tests
+2026-06-24 07:11:21,032 - app_compiler - INFO -   GET  /api/health          - Health check
+2026-06-24 07:11:21,033 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:21,072 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.93:5000
+2026-06-24 07:11:21,073 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 07:11:39,047 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 07:11:39] "GET / HTTP/1.1" 200 -
+2026-06-24 07:11:51,728 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 07:11:51,728 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:51,729 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 07:11:51,729 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:51,729 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:51,729 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 07:11:51,729 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:51,729 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:51,729 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 07:11:51,730 - app_compiler - INFO - ============================================================
+2026-06-24 07:11:51,730 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 07:11:55,405 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:11:55,406 - openai._base_client - INFO - Retrying request to /responses in 0.430435 seconds
+2026-06-24 07:11:56,933 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:11:56,934 - openai._base_client - INFO - Retrying request to /responses in 0.938481 seconds
+2026-06-24 07:11:58,994 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:11:58,995 - app_compiler - WARNING - Rate limited. Waiting 2s before retry...
+2026-06-24 07:12:01,535 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:12:01,535 - openai._base_client - INFO - Retrying request to /responses in 0.381085 seconds
+2026-06-24 07:12:04,898 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:12:04,899 - openai._base_client - INFO - Retrying request to /responses in 0.967049 seconds
+2026-06-24 07:12:06,662 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:12:06,663 - app_compiler - WARNING - Rate limited. Waiting 4s before retry...
+2026-06-24 07:12:11,372 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:12:11,373 - openai._base_client - INFO - Retrying request to /responses in 0.408398 seconds
+2026-06-24 07:12:12,312 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:12:12,313 - openai._base_client - INFO - Retrying request to /responses in 0.989293 seconds
+2026-06-24 07:12:13,856 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:12:13,858 - app_compiler - WARNING - Rate limited. Waiting 8s before retry...
+2026-06-24 07:12:21,858 - app_compiler - ERROR - Intent extraction failed: Failed after 3 attempts
+2026-06-24 07:12:21,859 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 07:12:21,859 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'Exception', 'message': 'Failed after 3 attempts'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'Exception', 'message': 'Failed after 3 attempts'}}
+2026-06-24 07:12:21,860 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 07:12:21] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
+2026-06-24 07:14:20,020 - app_compiler - INFO - Received compilation request: Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see a...
+2026-06-24 07:14:20,020 - app_compiler - INFO - ============================================================
+2026-06-24 07:14:20,020 - app_compiler - INFO - STAGE: PIPELINE - starting
+2026-06-24 07:14:20,020 - app_compiler - INFO - ============================================================
+2026-06-24 07:14:20,020 - app_compiler - INFO - ============================================================
+2026-06-24 07:14:20,020 - app_compiler - INFO - STAGE 1: INTENT EXTRACTION
+2026-06-24 07:14:20,020 - app_compiler - INFO - ============================================================
+2026-06-24 07:14:20,021 - app_compiler - INFO - ============================================================
+2026-06-24 07:14:20,021 - app_compiler - INFO - STAGE: STAGE_1 - intent_extraction
+2026-06-24 07:14:20,021 - app_compiler - INFO - ============================================================
+2026-06-24 07:14:20,021 - app_compiler - INFO - Calling LLM for intent extraction...
+2026-06-24 07:14:21,151 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:21,152 - openai._base_client - INFO - Retrying request to /responses in 0.473762 seconds
+2026-06-24 07:14:22,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:22,096 - openai._base_client - INFO - Retrying request to /responses in 0.930502 seconds
+2026-06-24 07:14:23,683 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:23,684 - app_compiler - WARNING - Rate limited. Waiting 2s before retry...
+2026-06-24 07:14:26,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:26,249 - openai._base_client - INFO - Retrying request to /responses in 0.449982 seconds
+2026-06-24 07:14:27,199 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:27,200 - openai._base_client - INFO - Retrying request to /responses in 0.867681 seconds
+2026-06-24 07:14:29,321 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:29,322 - app_compiler - WARNING - Rate limited. Waiting 4s before retry...
+2026-06-24 07:14:33,935 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:33,935 - openai._base_client - INFO - Retrying request to /responses in 0.495221 seconds
+2026-06-24 07:14:35,349 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:35,356 - openai._base_client - INFO - Retrying request to /responses in 0.878174 seconds
+2026-06-24 07:14:36,898 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-06-24 07:14:36,899 - app_compiler - WARNING - Rate limited. Waiting 8s before retry...
+2026-06-24 07:14:44,900 - app_compiler - ERROR - Intent extraction failed: Failed after 3 attempts
+2026-06-24 07:14:44,901 - app_compiler - ERROR - Stage 1 failed
+2026-06-24 07:14:44,901 - app_compiler - ERROR - Compilation failed: {'original_prompt': 'Build a CRM with login, contacts, dashboard, and premium plans with payment options. Admin can see analytics.', 'stages': {'intent_extraction': {'status': 'failed', 'error': 'Exception', 'message': 'Failed after 3 attempts'}}, 'failed_at_stage': 1, 'error': {'status': 'failed', 'error': 'Exception', 'message': 'Failed after 3 attempts'}}
+2026-06-24 07:14:44,902 - werkzeug - INFO - 192.168.1.93 - - [24/Jun/2026 07:14:44] "[31m[1mPOST /api/compile HTTP/1.1[0m" 400 -
