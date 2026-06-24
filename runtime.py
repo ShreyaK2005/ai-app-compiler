@@ -1,5 +1,5 @@
-from config.schemas import AppConfig
-from utils.logger import log_info, log_error, log_warning
+from schemas import AppConfig
+from logger import log_info, log_error, log_warning
 from typing import List, Dict, Any
 
 
