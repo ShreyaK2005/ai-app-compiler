@@ -13,7 +13,7 @@ from constants import (
 from constants import OPENAI_API_KEY
 
 
-from utils.logger import log_info, log_error, log_warning
+from logger import log_info, log_error, log_warning
 from openai import OpenAI, RateLimitError, APIError
 
 
