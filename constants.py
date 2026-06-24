@@ -4,10 +4,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ============ LLM CONFIG ============
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL = "gpt-5"
-MAX_TOKENS = 4096
-TEMPERATURE = 0.7
+curl https://api.openai.com/v1/responses \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer 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" \
+  -d '{
+    "model": "gpt-5.4-mini",
+    "input": "write a haiku about ai",
+    "store": true
+  }'
 
 # ============ RETRY CONFIG ============
 MAX_RETRIES = 3
