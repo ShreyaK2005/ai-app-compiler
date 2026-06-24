@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Compiler - AI System Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .output-section {
+            display: none;
+        }
+
+        .output-section.active {
+            display: block;
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        .status.loading {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .json-output {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            margin-top: 15px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .copy-btn {
+            background: #6c757d;
+            padding: 8px 15px;
+            font-size: 0.9em;
+            width: auto;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .pipeline-viz {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .stage {
+            background: #f0f0f0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .stage.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .stage.complete {
+            background: #28a745;
+            color: white;
+        }
+
+        .arrow {
+            flex: 0.1;
+            text-align: center;
+            font-size: 1.5em;
+            color: #667eea;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .metric-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .metric-label {
+            font-size: 0.85em;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-size: 1.5em;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 App Compiler</h1>
+            <p>Transform Natural Language into Production-Ready Application Configs</p>
+        </header>
+
+        <div class="main-grid">
+            <div class="card">
+                <h2>📝 Input</h2>
+                <p style="color: #666; margin-bottom: 15px; font-size: 0.95em;">Describe your application in natural language</p>
+                <textarea id="promptInput" placeholder="Example: Build a CRM with login, contacts, dashboard, role-based access, and premium plan with payments. Admins can see analytics."></textarea>
+                <button onclick="compileApp()">Compile App</button>
+            </div>
+
+            <div class="card">
+                <h2>📊 Pipeline Status</h2>
+                <div class="pipeline-viz">
+                    <div class="stage" id="stage1">Stage 1<br/>Intent</div>
+                    <div class="arrow">→</div>
+                    <div class="stage" id="stage2">Stage 2<br/>Design</div>
+                    <div class="arrow">→</div>
+                    <div class="stage" id="stage3">Stage 3<br/>Schema</div>
+                    <div class="arrow">→</div>
+                    <div class="stage" id="stage4">Stage 4<br/>Refine</div>
+                </div>
+                <div class="status" id="statusBox"></div>
+            </div>
+        </div>
+
+        <div class="card output-section" id="outputSection">
+            <h2>✨ Generated Config</h2>
+            <div class="metrics" id="metricsBox"></div>
+            <div class="json-output" id="jsonOutput"></div>
+            <button class="copy-btn" onclick="copyToClipboard()">📋 Copy JSON</button>
+            <button class="copy-btn" onclick="downloadJSON()">⬇️ Download</button>
+        </div>
+    </div>
+
+    <script>
+        async function compileApp() {
+            const prompt = document.getElementById('promptInput').value.trim();
+            if (!prompt) {
+                showStatus('Please enter a prompt', 'error');
+                return;
+            }
+
+            // Reset UI
+            resetPipeline();
+            showStatus('Starting compilation...', 'loading');
+
+            try {
+                const response = await fetch('/api/compile', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: prompt })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayResults(data);
+                    showStatus('✓ Compilation successful!', 'success');
+                } else {
+                    showStatus(`✗ Compilation failed: ${data.error || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`✗ Error: ${error.message}`, 'error');
+            }
+        }
+
+        function resetPipeline() {
+            document.querySelectorAll('.stage').forEach(el => {
+                el.classList.remove('active', 'complete');
+            });
+            document.getElementById('outputSection').classList.remove('active');
+        }
+
+        function showStatus(message, type) {
+            const box = document.getElementById('statusBox');
+            box.textContent = message;
+            box.className = `status ${type}`;
+        }
+
+        function displayResults(data) {
+            // Show metrics
+            const metricsBox = document.getElementById('metricsBox');
+            metricsBox.innerHTML = `
+                <div class="metric-card">
+                    <div class="metric-label">App ID</div>
+                    <div class="metric-value">${data.app_id}</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Compilation Time</div>
+                    <div class="metric-value">${data.elapsed_seconds.toFixed(2)}s</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">API Endpoints</div>
+                    <div class="metric-value">${data.api_endpoints}</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">DB Tables</div>
+                    <div class="metric-value">${data.db_tables}</div>
+                </div>
+            `;
+
+            // Show JSON
+            document.getElementById('jsonOutput').textContent = JSON.stringify(data.config, null, 2);
+
+            // Show output section
+            document.getElementById('outputSection').classList.add('active');
+
+            // Animate stages
+            markStageComplete(1);
+            markStageComplete(2);
+            markStageComplete(3);
+            markStageComplete(4);
+        }
+
+        function markStageComplete(stageNum) {
+            document.getElementById(`stage${stageNum}`).classList.add('complete');
+        }
+
+        function copyToClipboard() {
+            const json = document.getElementById('jsonOutput').textContent;
+            navigator.clipboard.writeText(json).then(() => {
+                alert('Copied to clipboard!');
+            });
+        }
+
+        function downloadJSON() {
+            const json = document.getElementById('jsonOutput').textContent;
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'app_config.json';
+            a.click();
+        }
+    </script>
+</body>
+</html>
