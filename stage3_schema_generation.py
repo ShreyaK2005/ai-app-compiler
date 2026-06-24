@@ -1,9 +1,9 @@
 import json
-from utils.llm_client import LLMClient
-from config.schemas import SystemDesign, UISchema, APISchema, DBSchema, AuthRules
-from validation.schema_validator import SchemaValidator
-from config.constants import STAGE_PROMPTS
-from utils.logger import log_info, log_error, log_stage
+from llm_client import LLMClient
+from schemas import SystemDesign, UISchema, APISchema, DBSchema, AuthRules
+from schema_validator import SchemaValidator
+from constants import STAGE_PROMPTS
+from logger import log_info, log_error, log_stage
 
 
 class SchemaGenerator:
