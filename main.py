@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import os
 import json
-from pipeline.coordinator import PipelineCoordinator
+from coordinator import PipelineCoordinator
 from execution.runtime import Runtime
 from evaluation.evaluator import Evaluator
 from utils.logger import log_info, log_error
