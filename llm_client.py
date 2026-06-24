@@ -10,7 +10,7 @@ from constants import (
     MAX_RETRIES,
     RETRY_BACKOFF_FACTOR
 )
-from config.constants import OPENAI_API_KEY
+from constants import OPENAI_API_KEY
 
 
 from utils.logger import log_info, log_error, log_warning
