@@ -5,7 +5,7 @@ import json
 from coordinator import PipelineCoordinator
 from runtime import Runtime
 from evaluator import Evaluator
-from utils.logger import log_info, log_error
+from logger import log_info, log_error
 from constants import OPENAI_API_KEY
 
 print("API Key loaded:", OPENAI_API_KEY[:15] if OPENAI_API_KEY else None)
