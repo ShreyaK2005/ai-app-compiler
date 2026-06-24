@@ -1,11 +1,11 @@
 import json
 import time
 from typing import List, Dict, Any
-from config.constants import TEST_CASES
-from config.schemas import EvaluationMetric, EvaluationReport
-from pipeline.coordinator import PipelineCoordinator
-from execution.runtime import Runtime
-from utils.logger import log_info, log_error
+from constants import TEST_CASES
+from schemas import EvaluationMetric, EvaluationReport
+from coordinator import PipelineCoordinator
+from runtime import Runtime
+from logger import log_info, log_error
 import statistics
 
 
