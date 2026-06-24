@@ -2,7 +2,7 @@ from openai import OpenAI
 import json
 import time
 import hashlib
-from config.constants import (
+from constants import (
 
     MODEL,
     MAX_TOKENS,
