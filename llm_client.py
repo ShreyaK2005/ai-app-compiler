@@ -10,14 +10,7 @@ from constants import (
     MAX_RETRIES,
     RETRY_BACKOFF_FACTOR
 )
-from constants import curl https://api.openai.com/v1/responses \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer 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" \
-  -d '{
-    "model": "gpt-5.4-mini",
-    "input": "write a haiku about ai",
-    "store": true
-  }'
+from constants import OPENAI_API_KEY
 
 
 from logger import log_info, log_error, log_warning
