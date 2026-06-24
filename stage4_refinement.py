@@ -1,9 +1,9 @@
 import json
 from typing import Dict, Any
-from config.schemas import UISchema, APISchema, DBSchema, AuthRules, AppConfig
-from validation.consistency_checker import ConsistencyChecker
-from validation.repair_engine import RepairEngine
-from utils.logger import log_info, log_error, log_stage, log_warning
+from schemas import UISchema, APISchema, DBSchema, AuthRules, AppConfig
+from consistency_checker import ConsistencyChecker
+from repair_engine import RepairEngine
+from logger import log_info, log_error, log_stage, log_warning
 import uuid
 from datetime import datetime
 
