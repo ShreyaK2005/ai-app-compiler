@@ -1,6 +1,6 @@
 from typing import List, Tuple
 from schemas import UISchema, APISchema, DBSchema, AuthRules, ValidationError as ValidationErrorSchema
-from utils.logger import log_warning, log_info, log_error
+from logger import log_warning, log_info, log_error
 
 
 class ConsistencyChecker:
