@@ -1,9 +1,9 @@
 import json
 from typing import Dict, Any, List, Tuple
-from utils.logger import log_warning, log_info, log_error
-from utils.llm_client import LLMClient
-from config.constants import STAGE_PROMPTS
-from config.schemas import ValidationError
+from logger import log_warning, log_info, log_error
+from llm_client import LLMClient
+from constants import STAGE_PROMPTS
+from schemas import ValidationError
 
 
 class RepairEngine:
