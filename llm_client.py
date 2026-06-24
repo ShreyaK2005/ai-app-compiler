@@ -61,7 +61,7 @@ class LLMClient:
         Call Claude and expect JSON response.
         Uses json_repair library to fix malformed JSON.
         """
-        from utils.json_parser import parse_json_safe
+        from json_parser import parse_json_safe
 
         response_text = self.call_llm(prompt, system_prompt)
 
