@@ -1,7 +1,7 @@
 import json
 import re
 from typing import Optional, Dict, Any
-from utils.logger import log_warning, log_error
+from logger import log_warning, log_error
 
 
 def parse_json_safe(response_text: str) -> Optional[Dict[str, Any]]:
