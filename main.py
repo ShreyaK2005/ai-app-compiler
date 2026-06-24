@@ -3,10 +3,10 @@ from flask_cors import CORS
 import os
 import json
 from coordinator import PipelineCoordinator
-from execution.runtime import Runtime
-from evaluation.evaluator import Evaluator
+from runtime import Runtime
+from evaluator import Evaluator
 from utils.logger import log_info, log_error
-from config.constants import OPENAI_API_KEY
+from constants import OPENAI_API_KEY
 
 print("API Key loaded:", OPENAI_API_KEY[:15] if OPENAI_API_KEY else None)
 
