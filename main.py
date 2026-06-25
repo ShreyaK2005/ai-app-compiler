@@ -2,13 +2,13 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import os
 import json
-from coordinator import PipelineCoordinator
-from runtime import Runtime
-from evaluator import Evaluator
-from logger import log_info, log_error
-from constants import OPENAI_API_KEY
+from pipeline.coordinator import PipelineCoordinator
+from execution.runtime import Runtime
+from evaluation.evaluator import Evaluator
+from utils.logger import log_info, log_error
+from config.constants import GROQ_API_KEY
 
-print("API Key loaded:", OPENAI_API_KEY[:15] if OPENAI_API_KEY else None)
+print("API Key loaded:", GROQ_API_KEY[:15] if GROQ_API_KEY else None)
 
 # Initialize Flask app
 app = Flask(__name__, template_folder='templates')
