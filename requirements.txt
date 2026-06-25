@@ -75,3 +75,4 @@ urllib3==2.7.0
 webencodings==0.5.1
 zope.event==6.2
 zope.interface==8.5
+groq==0.4.2
